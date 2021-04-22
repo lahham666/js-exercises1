@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+
+    <p id="p1"> Change the text inside me to "hello" </p>
+    <p id="p2"> Change the element to underlined with different text </p>
+    <p id="p3"> Change the P element to H1 with color red </p>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#p1").click(function () {
+                $(this).text("hello!");
+            })
+            $("#p2").click(function () {
+                $(this).html("<u> different texttt! </u>");
+            })
+            $("#p3").click(function () {
+                $(this).html("<h1> Change the P element to H1 with color red </h1>");
+                $(this).css("color", "red");
+            })
+        });
+    </script>
+
+
+</body>
+</html>

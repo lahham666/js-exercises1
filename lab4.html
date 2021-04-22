@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Welcome  </title>
+</head>
+<body>
+
+
+    <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+       Internet Programming 
+    </p>
+        
+    <script>
+
+      function  mouseDown(){
+       document.getElementById("myP").style.color = "red";
+       document.getElementById("myP").innerHTML = "PHP Language";
+        }
+
+        function  mouseUp(){
+       document.getElementById("myP").style.color = "pink";
+       document.getElementById("myP").innerHTML = "JQuery";
+        }      
+        </script>
+
+
+
+
+ <h1> Contact Form   </h1>
+  <br>
+  <form>  
+
+               <label> Name :  </label><br>
+               <input type="text" id="fname"     placeholder="Enter your name "    > <br>
+               <labe> Email : </labe><br>
+               <input type="email"  id="mail" placeholder="Enter your email address "   required> <br>
+               <label>Telephone :</label> <br>
+               <input type="number"  id="telp" placeholder="Enter you mobile number"> <br>
+               <label> Message </label> <br>
+               <textarea  rows="20"  cols="20"  id="msga"  > </textarea> <br>
+                <input type="button" id="btn"   value="send"   onClick= myFunction(); >
+
+
+  </form>
+
+                           <center>
+        <script>
+                  function myFunction(){
+ 
+                    var name = document.getElementById('fname');
+                    var Email = document.getElementById("mail");
+                    var num = document.getElementById("number");
+                    var msg = document.getElementById("msga");
+                    
+                  
+                   
+
+                    
+
+
+
+
+                  }
+           
+           
+
+          </script>
+
+
+              </center>
+
+
+
+</body>
+
+
+
+
+</html>
