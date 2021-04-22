@@ -1,0 +1,67 @@
+<!Doctype html>
+
+<html>
+
+<head>   
+    <title> Welcome  </title>
+</head>
+
+<body>
+
+    <center>
+        <canvas id="mycan" height="200" width="200" style="border: 2px solid black"> </canvas>
+
+       <script>
+
+         var c = document.getElementById("mycan");
+         var ctv = c.getContext("2d");
+           
+         ctv.beginPath();
+            ctv.arc(75,50,40,0,2*Math.PI);
+            ctv.stroke();
+            ctv.fillStyle="red";
+            ctv.fill();
+            
+            ctv.beginPath();
+            ctv.arc(130,50,40,0,2*Math.PI);
+            ctv.stroke();
+            ctv.fillStyle="yellow";
+            ctv.fill();
+
+            ctv.font="30px arial";
+            ctv.fillStyle="blue";
+            ctv.fillText("L@77@M", 50,160);
+
+            ctv.moveTo(30,190);
+            ctv.lineTo(180,190);
+            ctv.strokeStyle="black";
+            ctv.stroke();
+
+
+
+
+
+
+       </script>
+
+
+
+        </center>
+      
+    
+
+    
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+</html>

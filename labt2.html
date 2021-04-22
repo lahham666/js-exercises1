@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome  </title>
+</head>
+<body>
+<canvas id="canvas"  width="800"  height="420"  > </canvas>
+<script>
+var c = document.getElementById("canvas");
+var ctx = c.getContext("2d");
+
+
+
+ctx.moveTo(20,0);
+        ctx.lineTo(20,400);
+        ctx.stroke();
+
+        ctx.moveTo(20,400);
+        ctx.lineTo(800,400);
+        ctx.stroke();
+
+        ctx.font="10px arial";
+        ctx.fillStyle="black";
+        ctx.fillText("0", 0,400);
+
+        ctx.font="10px arial";
+        ctx.fillStyle="black";
+        ctx.fillText("50", 0,350);
+
+        ctx.font="10px arial";
+        ctx.fillStyle="black";
+        ctx.fillText("100", 0,300);
+
+        ctx.font="10px arial";
+        ctx.fillStyle="black";
+        ctx.fillText("150", 0,250);
+
+        ctx.font="10px arial";
+        ctx.fillStyle="black";
+        ctx.fillText("200", 0,200);
+
+        ctx.font="10px arial";
+        ctx.fillStyle="black";
+        ctx.fillText("250", 0,150);
+
+        ctx.font="10px arial";
+        ctx.fillStyle="black";
+        ctx.fillText("300", 0,100);
+
+        ctx.fillStyle = "#990000";
+        ctx.fillRect(20,200,100,200);
+        ctx.fillRect(120,280,100,120);
+        ctx.fillRect(220,330,100,70);
+        ctx.fillRect(320,170,100,230);
+        ctx.fillRect(420,70,100,330);
+
+        ctx.fillStyle="black";
+        ctx.fillText("Rome", 20,420);
+        ctx.fillText("Dublin", 120,420);
+        ctx.fillText("London", 220,420);
+        ctx.fillText("Berlin", 320,420);
+        ctx.fillText("Valetta", 420,420);
+
+</script>
+</body>
+</html>

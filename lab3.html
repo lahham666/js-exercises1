@@ -1,0 +1,96 @@
+<!Doctype html >
+
+<html>
+
+
+<head>
+    <title>
+        Welcome 
+    </title>
+</head>
+
+
+<body>
+
+       <script>
+
+         var grades = [4];
+
+          grades[0] = window.prompt("Enter grade for student 1 ");
+          grades[1] = window.prompt("Enter grade for student 2 ");
+          grades[2] = window.prompt("Enter grade for student 3 ");
+          grades[3] = window.prompt("Enter grade for student 4 ");
+          grades[4] = window.prompt("Enter grade for student 5 ");
+
+           
+          document.writeln("The Grade for Student one  "+ grades[0]);
+          document.write("<br>");
+          document.writeln("The Grade for Student two  "+ grades[1]);
+          document.write("<br>");
+          document.writeln("The Grade for Student three  "+ grades[2]);
+          document.write("<br>");
+          document.writeln("The Grade for Student four  "+ grades[3]);
+          document.write("<br>");
+          document.writeln("The Grade for Student five  "+ grades[4]);
+    
+          document.write("<br>");
+
+
+          document.writeln("The Student Who Passed In The Exam ");
+          document.write("<br>");
+          var i;
+           for (i=0 ; i<= 5 ; i++ ){
+            if(grades[i] >= 50 ){
+                document.write(grades[i] + "<br>");
+            }
+           }
+
+           document.write("<br>");
+
+
+             
+                var c = window.prompt("specify the primary color by typing either R (Red) or G (Green ) or B (Blue) ");
+                              if(c == "r"){
+                                document.write('<h1 style="color: red"> Your favourit color is red </h1>');
+                            }
+
+                            else if (c == "g"){
+                                document.write('<h1 style="color: green"> Your favourit color is green </h1>');
+                            }
+
+                            else if ( c == "b"){
+                                document.write('<h1 style="color: blue"> Your favourit color is blue </h1>');
+
+                                      
+                            }
+                             
+                                                               
+
+
+           
+
+
+
+        
+
+
+
+
+
+
+
+
+       </script>
+
+      
+
+
+
+
+
+
+    </body>
+
+
+
+</html>
