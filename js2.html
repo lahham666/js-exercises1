@@ -1,0 +1,98 @@
+<!Doctype html>
+<html>
+<head>
+
+    <title> Welcome  </title>
+
+<script>
+
+function showInfo(){
+   
+    var Fn=document.getElementById("fname").value;
+    var Ln=document.getElementById("ln").value;
+    window.alert(Fn+"     "+Ln);
+    var Sel =document.getElementById("sel").value;
+    if(Sel == 1) {
+       window.alert("Jordan");
+    }
+    else if (Sel == 2){
+    
+        window.alert("Egypt");
+    }
+     else if (Sel == 3){
+         window.alert("Syria");
+     }
+         else {
+             window.alert ("Palestine");
+         }
+
+
+           var fb= document.getElementById("football");
+            var ch= document.getElementById("Chess");
+            var gf= document.getElementById("Golf");
+
+            if(fb.checked)
+                window.alert("football");
+            if(ch.checked)
+                window.alert("Chess");
+            if(gf.checked)
+                window.alert("Golf");
+
+
+
+
+
+
+
+
+
+}
+
+
+</script>
+</head>
+
+<body>
+
+<form  id="myform">
+<label>First Name :</label>
+<input type="text" id="fname"> <br>
+<label> Family Name :  </label>
+<input type="text" id="ln" > <br>
+<select id="sel">
+<option  value='1'>Jordan</option>
+<option  value='2'>Egypt</option>
+<option  value='3'>Syria</option>
+<option  value='4'>Palestine</option>
+</select>
+<br>
+
+Hobbies :
+<input type="checkbox"   id="football" > football
+<input type="checkbox"   id="Chess" > Chess 
+<input type="checkbox"   id="Golf" > Golf 
+<br>
+
+<input type="button"  value="Click"     onclick="showInfo()">
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
